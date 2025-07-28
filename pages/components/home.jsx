@@ -304,11 +304,11 @@ export default function Home() {
       ref={mountRef}
       className="h-screen bg-gradient-to-b from-black to-black overflow-hidden relative border-[10px] border-[#AFFE14] overflow-x-auto"
     >
-      <div className="absolute bottom-4 sm:bottom-8 md:bottom-[-10px] left-4 sm:left-8 md:left-12 max-w-[100%] sm:max-w-[80%] md:max-w-5xl p-4 sm:p-6 selection:bg-transparent overflow-x-auto ">
-        <h2 className="text-xs sm:text-sm md:text-base font-medium  text-white uppercase tracking-wider mb-2 sm:mb-3 md:mb-4">
+      <div className="absolute bottom-4 sm:bottom-8 md:bottom-[-10px] left-2 sm:left-4 md:left-8 lg:left-12 max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-5xl p-3 sm:p-4 md:p-6 selection:bg-transparent overflow-x-auto">
+        <h2 className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-white uppercase tracking-wider mb-2 sm:mb-3 md:mb-4 leading-tight">
           Creative content consultancy
         </h2>
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight uppercase">
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-tight sm:leading-tight md:leading-tight lg:leading-tight uppercase">
           Helping <span className="text-[#AFFE14] font-extrabold">Brands</span>,{" "}
           <span className="text-[#AFFE14] font-extrabold">Creators</span>, &{" "}
           <span className="text-[#AFFE14] font-extrabold">Agencies</span> Unlock

@@ -330,106 +330,120 @@ const Footer = () => {
     <>
       <footer>
         <div className="relative">
-          <div className="border-t border-neutral-800 px-8 pt-20 pb-32 relative bg-black z-0">
+          <div className="border-t border-neutral-800 px-4 sm:px-6 md:px-8 pt-12 sm:pt-16 md:pt-20 pb-20 sm:pb-24 md:pb-32 relative bg-black z-0">
             <div className="absolute inset-0 z-10 flex items-center justify-center overflow-hidden pointer-events-none">
-              <p className="text-center text-5xl md:text-9xl lg:text-[18rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-950 via-neutral-800 to-[#AFFE14]/30 select-none">
+              <p className="text-center text-3xl sm:text-5xl md:text-9xl lg:text-[18rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-950 via-neutral-800 to-[#AFFE14]/30 select-none">
                 NEXCAST
               </p>
             </div>
 
-            <div className="max-w-7xl mx-auto text-sm text-neutral-400 flex flex-col sm:flex-row justify-between items-start relative z-20">
+            <div className="max-w-7xl mx-auto text-xs sm:text-sm text-neutral-400 flex flex-col sm:flex-row justify-between items-start relative z-20">
               <div>
-                <div className="mb-4">
+                <div className="mb-3 sm:mb-4">
                   <a
                     href="/"
                     className="inline-flex items-center space-x-2 text-white"
                   >
-                    <span className="font-medium">Nexcast</span>
+                    <span className="font-medium text-sm sm:text-base">
+                      Nexcast
+                    </span>
                   </a>
                 </div>
-                <div>Copyright © {new Date().getFullYear()} TriggrsWeb</div>
-                <div className="mt-2">All rights reserved</div>
+                <div className="text-xs sm:text-sm">
+                  Copyright © {new Date().getFullYear()} TriggrsWeb
+                </div>
+                <div className="mt-1 sm:mt-2 text-xs sm:text-sm">
+                  All rights reserved
+                </div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mt-10 sm:mt-0">
-                <div className="space-y-4">
-                  <h3 className="text-white font-medium">Pages</h3>
-                  <div className="flex flex-col space-y-2">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 mt-8 sm:mt-10 lg:mt-0">
+                <div className="space-y-3 sm:space-y-4">
+                  <h3 className="text-white font-medium text-sm sm:text-base">
+                    Pages
+                  </h3>
+                  <div className="flex flex-col space-y-1.5 sm:space-y-2">
                     <a
                       href="/pricing"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Pricing
                     </a>
                     <a
                       href="/contact"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Contact
                     </a>
                     <a
                       href="/blog"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Blog
                     </a>
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-white font-medium">Legal</h3>
-                  <div className="flex flex-col space-y-2">
+                <div className="space-y-3 sm:space-y-4">
+                  <h3 className="text-white font-medium text-sm sm:text-base">
+                    Legal
+                  </h3>
+                  <div className="flex flex-col space-y-1.5 sm:space-y-2">
                     <a
                       href="/privacy"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Privacy Policy
                     </a>
                     <a
                       href="/terms"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Terms of Service
                     </a>
                     <a
                       href="/about"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       About Us
                     </a>
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-white font-medium">Socials</h3>
-                  <div className="flex flex-col space-y-2">
+                <div className="space-y-3 sm:space-y-4">
+                  <h3 className="text-white font-medium text-sm sm:text-base">
+                    Socials
+                  </h3>
+                  <div className="flex flex-col space-y-1.5 sm:space-y-2">
                     <a
                       href="https://twitter.com/nexcast"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Twitter
                     </a>
                     <a
                       href="https://discord.gg/nexcast"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Discord
                     </a>
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-white font-medium">Services</h3>
-                  <div className="flex flex-col space-y-2">
+                <div className="space-y-3 sm:space-y-4">
+                  <h3 className="text-white font-medium text-sm sm:text-base">
+                    Services
+                  </h3>
+                  <div className="flex flex-col space-y-1.5 sm:space-y-2">
                     <a
                       href="/influencer"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Influencer Growth
                     </a>
                     <a
                       href="/marketing"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       Content Marketing
                     </a>

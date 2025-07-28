@@ -66,49 +66,6 @@ const Navbar = () => {
             <span>About Us</span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#536a26] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          {/* <div className="relative group">
-            <button
-              className="text-white flex items-center relative"
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
-              <span>What we offer</span>
-              <svg
-                className={`w-4 h-4 ml-1 transition-transform duration-300 ${
-                  showDropdown ? "rotate-180" : ""
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              className={`absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl py-2 transition-all duration-300 ${
-                showDropdown
-                  ? "opacity-100 visible translate-y-0"
-                  : "opacity-0 invisible -translate-y-2"
-              }`}
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
-              {serviceLinks.map((service, index) => (
-                <Link
-                  key={index}
-                  href={service.href}
-                  className="block px-4 py-2 text-white hover:bg-[#AFFE14] hover:text-black transition-all duration-300 hover:pl-6"
-                >
-                  <span>{service.label}</span>
-                </Link>
-              ))}
-            </div>
-          </div> */}
         </nav>
 
         {/* Desktop Logo */}
@@ -145,15 +102,16 @@ const Navbar = () => {
         {/* MOBILE VIEW */}
         {/* Mobile Logo - Left Aligned */}
         <Link href="/" className="md:hidden flex items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={60}
-            height={60}
-            className="object-cover w-[90px] h-full"
-            quality={100}
-            priority
-          />
+          <div className="relative w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              quality={100}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Mobile Menu Button */}
@@ -197,29 +155,45 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {showMobileMenu && (
-          <div className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-sm mt-4 p-4 rounded-lg md:hidden">
-            <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-white hover:text-[#AFFE14]">
+          <div className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-sm mt-4 p-6 rounded-2xl md:hidden border border-white/20">
+            <nav className="flex flex-col space-y-6">
+              <Link
+                href="/"
+                className="text-white hover:text-[#AFFE14] text-lg font-medium transition-colors duration-300"
+                onClick={() => setShowMobileMenu(false)}
+              >
                 Home
               </Link>
-              <Link href="#results" className="text-white hover:text-[#AFFE14]">
-                Our Impact
-              </Link>
-              {serviceLinks.map((service, index) => (
-                <Link
-                  key={index}
-                  href={service.href}
-                  className="text-white hover:text-[#AFFE14] pl-4"
-                >
-                  {service.label}
-                </Link>
-              ))}
               <Link
-                href="/components/Contact"
-                className="text-white hover:text-[#AFFE14] font-semibold"
+                href="/about/About"
+                className="text-white hover:text-[#AFFE14] text-lg font-medium transition-colors duration-300"
+                onClick={() => setShowMobileMenu(false)}
               >
-                Enquire Now
+                About Us
               </Link>
+              {/* <div className="h-[1px] bg-white/20"></div>
+              <div className="space-y-4">
+                <p className="text-[#AFFE14] font-semibold">Our Services</p>
+                {serviceLinks.map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="block text-white/90 hover:text-[#AFFE14] pl-4 transition-colors duration-300"
+                    onClick={() => setShowMobileMenu(false)}
+                  >
+                    {service.label}
+                  </Link>
+                ))}
+              </div> */}
+              <div className="pt-4">
+                <Link
+                  href="/contact/Contact"
+                  className="block w-full py-3 px-6 text-center bg-[#AFFE14] text-black font-semibold rounded-xl hover:bg-[#8CD812] transition-colors duration-300"
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  Enquire Now
+                </Link>
+              </div>
             </nav>
           </div>
         )}

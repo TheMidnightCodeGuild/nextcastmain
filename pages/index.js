@@ -14,7 +14,7 @@ import Test from "./components/test";
 
 const Index = () => {
   return (
-    <div className="bg-[#000000] overflow-x-auto">
+    <div className="bg-[#000000] overflow-x-hidden">
       <Navbar />
 
       <Home />
@@ -22,7 +22,9 @@ const Index = () => {
       <AboutUs />
       <Why />
       <Industries />
-      <Test />
+      <div className="hidden md:block">
+        <Test />
+      </div>
       {/* <Technologies /> */}
       {/* <Testimonials /> */}
       <Footer />

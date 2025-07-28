@@ -48,13 +48,13 @@ const Banner = () => {
         gradient={false}
         speed={speed}
         direction={direction}
-        className="bg-[#000000] py-3 sm:py-5 mb-2 rounded-full"
+        className="bg-[#000000] py-2 sm:py-3 md:py-5 mb-2 rounded-full"
       >
-        <div className="flex space-x-8 sm:space-x-16 mx-4 sm:mx-8">
+        <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-16 mx-2 sm:mx-4 md:mx-8">
           {promises.map((promise, index) => (
             <span
               key={index}
-              className="text-[#fffff0] text-sm sm:text-lg font-bold whitespace-nowrap hover:text-[#AFFE14] transition-colors duration-300"
+              className="text-[#fffff0] text-xs sm:text-sm md:text-lg font-bold whitespace-nowrap hover:text-[#AFFE14] transition-colors duration-300 px-1 sm:px-2"
             >
               {promise.title}
             </span>
