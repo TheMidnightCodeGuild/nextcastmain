@@ -66,13 +66,14 @@ const ChooseUs = () => {
                   <h2 className="text-2xl sm:text-3xl text-white font-extrabold lg:text-4xl">
                     Your Partner in{" "}
                     <span className="text-[#AFFE14] underline">
-                      Influencer Growth
+                      Content Creation
                     </span>
                   </h2>
                   <p className="mt-3 text-sm sm:text-base text-gray-300">
-                    Choose us for comprehensive influencer growth solutions that
-                    drive real results. We deliver innovative strategies backed
-                    by industry expertise and dedicated support.
+                    Choose us for comprehensive content and digital presence
+                    growth solutions that drive real results. We deliver
+                    innovative strategies backed by industry expertise and
+                    dedicated support
                   </p>
                 </div>
 
@@ -82,7 +83,8 @@ const ChooseUs = () => {
                       <svg
                         className="w-8 h-8 sm:w-10 sm:h-10"
                         fill="currentColor"
-                        viewBox="0 0 24 24">
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-6h2v2h-2zm0-8h2v6h-2z" />
                       </svg>
                     </span>
@@ -103,18 +105,19 @@ const ChooseUs = () => {
                       <svg
                         className="w-8 h-8 sm:w-10 sm:h-10"
                         fill="currentColor"
-                        viewBox="0 0 24 24">
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                       </svg>
                     </span>
                     <div className="sm:ms-5 sm:ms-8">
                       <h3 className="text-base sm:text-lg font-semibold text-white">
-                        Guaranteed Instagram Verification
+                        Content Strategy & Performance Excellence
                       </h3>
                       <p className="mt-1 text-sm sm:text-base text-gray-300">
-                        We specialize in securing the coveted blue tick through
-                        legitimate PR strategies and proven verification
-                        processes.
+                        We blend storytelling craft with sharp marketing insight
+                        to create content strategies that amplify your brand’s
+                        voice, engage audiences, and deliver measurable impact.
                       </p>
                     </div>
                   </div>
@@ -124,18 +127,20 @@ const ChooseUs = () => {
                       <svg
                         className="w-8 h-8 sm:w-10 sm:h-10"
                         fill="currentColor"
-                        viewBox="0 0 24 24">
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
                       </svg>
                     </span>
                     <div className="sm:ms-5 sm:ms-8">
                       <h3 className="text-base sm:text-lg font-semibold text-white">
-                        Dedicated Growth Experts
+                        Dedicated Creative Experts
                       </h3>
                       <p className="mt-1 text-sm sm:text-base text-gray-300">
-                        Work directly with experienced social media strategists
-                        who understand the influencer landscape and provide
-                        personalized guidance.
+                        Work hand-in-hand with seasoned strategists, creatives,
+                        and analysts. We tailor our approach to your unique
+                        brand challenges, ensuring clarity, creativity, and
+                        results at every step.
                       </p>
                     </div>
                   </div>

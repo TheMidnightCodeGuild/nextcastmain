@@ -218,7 +218,7 @@ export default function Home() {
 
     // Position camera
     camera.position.z = dimensions.width < 768 ? 15 : 12;
-    camera.position.x = 0;
+    camera.position.x = dimensions.width < 768 ? 0 : 8; // Move camera right for desktop to shift earth left
     camera.position.y = 0;
 
     // Animation
@@ -302,18 +302,18 @@ export default function Home() {
   return (
     <div
       ref={mountRef}
-      className="h-screen bg-gradient-to-b from-black to-black overflow-hidden relative border-[10px] border-[#AFFE14] ">
-      <div className="absolute bottom-4 sm:bottom-8 md:bottom-[-10px] left-4 sm:left-8 md:left-12 max-w-[90%] sm:max-w-[80%] md:max-w-3xl p-4 sm:p-6 selection:bg-transparent">
+      className="h-screen bg-gradient-to-b from-black to-black overflow-hidden relative border-[10px] border-[#AFFE14] overflow-x-auto"
+    >
+      <div className="absolute bottom-4 sm:bottom-8 md:bottom-[-10px] left-4 sm:left-8 md:left-12 max-w-[100%] sm:max-w-[80%] md:max-w-5xl p-4 sm:p-6 selection:bg-transparent overflow-x-auto ">
         <h2 className="text-xs sm:text-sm md:text-base font-medium  text-white uppercase tracking-wider mb-2 sm:mb-3 md:mb-4">
-          Creative content marketing solutions
+          Creative content consultancy
         </h2>
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight uppercase">
-          Helping Influencers To Get Their{" "}
-          <span className="text-[#AFFE14] font-extrabold">
-            First Brand Deal
-          </span>{" "}
-          & Grow <span className="text-[#AFFE14] font-extrabold">Faster</span>{" "}
-          With <span className="text-[#AFFE14]">Nexcast</span>
+          Helping <span className="text-[#AFFE14] font-extrabold">Brands</span>,{" "}
+          <span className="text-[#AFFE14] font-extrabold">Creators</span>, &{" "}
+          <span className="text-[#AFFE14] font-extrabold">Agencies</span> Unlock
+          Their <span className="text-[#AFFE14]">Full Potential</span> Through{" "}
+          <span className="text-[#AFFE14]">Innovative</span> Content Strategies
         </h1>
       </div>
     </div>

@@ -8,7 +8,8 @@ const Banner = () => {
   const promises = [
     {
       title: "Clear Communication and Reporting",
-      description: "Regular updates and transparent reporting on campaign performance",
+      description:
+        "Regular updates and transparent reporting on campaign performance",
     },
     {
       title: "Tailored Strategies",
@@ -34,26 +35,26 @@ const Banner = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDirection(prev => prev === "left" ? "right" : "left");
-      setSpeed(prev => Math.random() * 30 + 30); // Random speed between 30-60
+      setDirection((prev) => (prev === "left" ? "right" : "left"));
+      setSpeed((prev) => Math.random() * 30 + 30); // Random speed between 30-60
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="pt-4 bg-[#000000]">
+    <div className="pt-2 sm:pt-4 bg-[#000000]">
       <Marquee
         gradient={false}
         speed={speed}
         direction={direction}
-        className="bg-[#000000] py-5 mb-2 rounded-full "
+        className="bg-[#000000] py-3 sm:py-5 mb-2 rounded-full"
       >
-        <div className="flex space-x-16 mx-8">
+        <div className="flex space-x-8 sm:space-x-16 mx-4 sm:mx-8">
           {promises.map((promise, index) => (
             <span
               key={index}
-              className="text-[#fffff0] text-lg font-bold whitespace-nowrap hover:text-[#AFFE14] transition-colors duration-300"
+              className="text-[#fffff0] text-sm sm:text-lg font-bold whitespace-nowrap hover:text-[#AFFE14] transition-colors duration-300"
             >
               {promise.title}
             </span>

@@ -9,15 +9,12 @@ import Technologies from "./components/homepage/Technologies";
 import BackToTopButton from "./components/subcomponents/Button";
 import Why from "./components/homepage/Why";
 import Home from "./components/home";
-import BlobCursor from "@/lib/BlobCursor";
+import Test from "./components/test";
+// import BlobCursor from "@/lib/BlobCursor";
 
 const Index = () => {
   return (
-    <div className="bg-[#000000]">
-      <div className="absolute inset-0 z-[1]">
-        <BlobCursor />
-      </div>
-
+    <div className="bg-[#000000] overflow-x-auto">
       <Navbar />
 
       <Home />
@@ -25,8 +22,9 @@ const Index = () => {
       <AboutUs />
       <Why />
       <Industries />
-      <Technologies />
-      <Testimonials />
+      <Test />
+      {/* <Technologies /> */}
+      {/* <Testimonials /> */}
       <Footer />
       <BackToTopButton />
     </div>

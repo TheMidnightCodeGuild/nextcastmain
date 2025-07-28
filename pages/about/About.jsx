@@ -57,7 +57,8 @@ const AboutUs = () => {
         <div className="grid md:grid-cols-2 gap-8 sm:gap-32 items-center mb-6 sm:mb-10">
           <div
             ref={videoRef}
-            className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden">
+            className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden"
+          >
             <video
               src="/images/about.mp4"
               className="w-full h-full object-cover"
@@ -73,16 +74,20 @@ const AboutUs = () => {
             </h1>
             <div className="h-1 sm:h-1.5 w-16 sm:w-20 md:w-28 bg-[#AFFE14] rounded-full mx-0 mb-3 sm:mb-6"></div>
             <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 italic">
-              We are a creative content marketing agency specializing in social
-              media content creation and performance marketing. Our expertise
-              lies in crafting engaging content and implementing data-driven
-              strategies that help brands connect with their target audience,
-              boost engagement, and drive measurable results.
+              We are a creative content consultancy dedicated to empowering
+              brands through strategic content solutions and insightful
+              guidance. Specializing in crafting compelling narratives and
+              implementing data-driven strategies, we help brands connect
+              authentically with their target audiences, amplify engagement, and
+              achieve measurable growth.
             </p>
             <p className="text-base sm:text-lg text-gray-300 italic">
-              Our innovative approach and proven track record of success make us
-              the ideal partner for brands looking to elevate their digital
-              presence and achieve exceptional marketing outcomes.
+              Our consultative approach combines creativity with analytics,
+              enabling brands to refine their messaging, unlock new
+              opportunities, and elevate their digital presence. With a proven
+              track record of delivering impactful content strategies and
+              creative direction, we are the trusted partner for brands aiming
+              to transform their content into meaningful business outcomes.
             </p>
           </div>
         </div>
