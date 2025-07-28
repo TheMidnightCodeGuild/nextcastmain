@@ -3,17 +3,21 @@ import Image from "next/image";
 import Navbar from "../components/subcomponents/Navbar";
 import Footer from "../components/subcomponents/Footer";
 import BackToTopButton from "../components/subcomponents/Button";
-import LocomotiveScroll from "locomotive-scroll";
 import Cards from "./Cards";
 import Webbanner from "../components/banners/Webbanner";
+
 const Web = () => {
   useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll({
-      smooth: true,
-    });
-    return () => {
-      locomotiveScroll.destroy();
-    };
+    // Only run on client side
+    if (typeof window !== "undefined") {
+      const LocomotiveScroll = require("locomotive-scroll").default;
+      const locomotiveScroll = new LocomotiveScroll({
+        smooth: true,
+      });
+      return () => {
+        locomotiveScroll.destroy();
+      };
+    }
   }, []);
   return (
     <div className="bg-black">
@@ -29,7 +33,8 @@ const Web = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-400">
+              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-400"
+            >
               <path
                 strokeLinecap="round"
                 stroke-linejoin="round"
@@ -65,7 +70,8 @@ const Web = () => {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -95,7 +101,8 @@ const Web = () => {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -131,7 +138,8 @@ const Web = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-400">
+              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-400"
+            >
               <path
                 strokeLinecap="round"
                 stroke-linejoin="round"
@@ -198,7 +206,8 @@ const Web = () => {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -264,7 +273,8 @@ const Web = () => {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

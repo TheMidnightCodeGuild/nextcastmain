@@ -3,7 +3,7 @@ import React, { useEffect, useId, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
-import { SparklesCore } from "./sparkles";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 export const Cover = ({ children, className }) => {
   const [hovered, setHovered] = useState(false);
@@ -32,7 +32,8 @@ export const Cover = ({ children, className }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       ref={ref}
-      className="relative hover:bg-neutral-900  group/cover inline-block bg-neutral-900 px-2 py-2  transition duration-200 rounded-md mt-1 italic">
+      className="relative hover:bg-neutral-900  group/cover inline-block bg-neutral-900 px-2 py-2  transition duration-200 rounded-md mt-1 italic"
+    >
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -44,7 +45,8 @@ export const Cover = ({ children, className }) => {
                 duration: 0.2,
               },
             }}
-            className="h-full w-full overflow-hidden absolute inset-0">
+            className="h-full w-full overflow-hidden absolute inset-0"
+          >
             <motion.div
               animate={{
                 translateX: ["-50%", "0%"],
@@ -56,7 +58,8 @@ export const Cover = ({ children, className }) => {
                   repeat: Infinity,
                 },
               }}
-              className="w-[200%] h-full flex">
+              className="w-[200%] h-full flex"
+            >
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
@@ -124,7 +127,8 @@ export const Cover = ({ children, className }) => {
         className={cn(
           "text-white  inline-block  relative z-20 group-hover/cover:text-white transition duration-200",
           className
-        )}>
+        )}
+      >
         {children}
       </motion.span>
       <CircleIcon className="absolute -right-[2px] -top-[2px]" />
@@ -153,7 +157,8 @@ export const Beam = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn("absolute inset-x-0 w-full", className)}
-      {...svgProps}>
+      {...svgProps}
+    >
       <motion.path
         d={`M0 0.5H${width ?? "600"}`}
         stroke={`url(#svgGradient-${id})`}
@@ -181,7 +186,8 @@ export const Beam = ({
             repeat: Infinity,
             delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : 0,
             repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
-          }}>
+          }}
+        >
           <stop stopColor="#2EB9DF" stopOpacity="0" />
           <stop stopColor="#3b82f6" />
           <stop offset="1" stopColor="#3b82f6" stopOpacity="0" />
@@ -197,6 +203,7 @@ export const CircleIcon = ({ className, delay }) => {
       className={cn(
         `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
         className
-      )}></div>
+      )}
+    ></div>
   );
 };

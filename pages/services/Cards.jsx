@@ -1,4 +1,4 @@
-import { HoverEffect } from "../components/ui/card-hover-effect";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 export default function Cards() {
   return (
     <div className="w-full mx-auto px-4 -mt-5 ">

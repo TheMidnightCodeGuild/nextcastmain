@@ -1,5 +1,5 @@
 import React from "react";
-import { BackgroundGradient } from "../ui/background-gradient";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Image from "next/image";
 
 export default function BlogCard() {
@@ -45,7 +45,8 @@ export default function BlogCard() {
           {blogPosts.map((post, index) => (
             <BackgroundGradient
               key={index}
-              className="rounded-[22px] p-4 sm:p-6 bg-zinc-900 border border-zinc-500">
+              className="rounded-[22px] p-4 sm:p-6 bg-zinc-900 border border-zinc-500"
+            >
               <div className="relative h-64 w-full mb-4">
                 <Image
                   src={post.image}
