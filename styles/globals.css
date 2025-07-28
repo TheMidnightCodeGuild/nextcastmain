@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}

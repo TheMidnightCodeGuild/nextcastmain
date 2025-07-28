@@ -1,0 +1,36 @@
+{
+  "name": "nexcast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.4.2",
+    "@react-three/fiber": "^9.2.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.0",
+    "gsap": "^3.13.0",
+    "locomotive-scroll": "^4.1.4",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.178.0",
+    "three-globe": "^2.43.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "tailwindcss": "^4"
+  }
+}
