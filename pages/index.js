@@ -1,35 +1,61 @@
 import React from "react";
-import Navbar from "./components/subcomponents/Navbar";
-import Testimonials from "./components/homepage/Testimonial";
-import Footer from "./components/subcomponents/Footer";
-import Marque from "./components/homepage/Marque";
-import AboutUs from "./about/About";
-import Industries from "./components/homepage/Industries";
-import Technologies from "./components/homepage/Technologies";
-import BackToTopButton from "./components/subcomponents/Button";
-import Why from "./components/homepage/Why";
+import Head from "next/head";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Marque from "./components/Marque";
+import AboutUs from "./components/About";
+import Industries from "./components/Industries";
+import Technologies from "./components/Technologies";
+import BackToTopButton from "./components/Button";
+import Why from "./components/Why";
 import Home from "./components/home";
 import Test from "./components/test";
-// import BlobCursor from "@/lib/BlobCursor";
+import Contact from "./components/Contact";
+import Loader from "./components/Loader";
 
 const Index = () => {
   return (
-    <div className="bg-[#000000] overflow-x-hidden">
-      <Navbar />
+    <>
+      <Head>
+        <title>NexCast Entertainment - Creative Content Consultancy</title>
+        <meta
+          name="description"
+          content="NexCast Entertainment is a leading creative content consultancy helping businesses grow online through innovative solutions and strategies."
+        />
+        <meta
+          name="keywords"
+          content="creative content consultancy, content creation, content strategy, content marketing, content distribution, content analytics"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:title"
+          content="NexCast Entertainment - Creative Content Consultancy"
+        />
+        <meta
+          property="og:description"
+          content="Transform your online presence with our expert creative content consultancy services."
+        />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://nexcast.co.in" />
+      </Head>
 
-      <Home />
-      <Marque />
-      <AboutUs />
-      <Why />
-      <Industries />
-      <div className="hidden md:block">
-        <Test />
+      <div className="bg-[#000000] overflow-x-hidden">
+        <Loader />
+        <Navbar />
+        <Home />
+        <Marque />
+        <AboutUs />
+        <Why />
+        <Industries />
+        <div className="hidden md:block">
+          <Test />
+        </div>
+        <Technologies />
+        <Contact />
+        <Footer />
+        <BackToTopButton />
       </div>
-      {/* <Technologies /> */}
-      {/* <Testimonials /> */}
-      <Footer />
-      <BackToTopButton />
-    </div>
+    </>
   );
 };
 

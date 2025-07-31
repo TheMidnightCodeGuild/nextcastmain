@@ -53,7 +53,7 @@ const ChooseUs = () => {
   }, []);
 
   return (
-    <section className="relative">
+    <section id="why" className="relative">
       <div className="bg-gradient-to-b from-black to-[#240141] mt-16 md:mt-24 min-h-[80vh] md:min-h-screen">
         <div className="w-full h-full p-2 border-b border-black">
           <div className="lg:max-w-[1300px] px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10 lg:py-14 pt-12 sm:pt-16 md:pt-20 lg:pt-36 mx-auto">

@@ -52,7 +52,10 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[80vh] md:min-h-screen bg-gradient-to-b from-black to-black text-[#fffff0] py-10 mt-5 mb-10">
+    <section
+      id="about"
+      className="relative min-h-[80vh] md:min-h-screen bg-gradient-to-b from-black to-black text-[#fffff0] py-10 mt-5 mb-10"
+    >
       <div className="lg:max-w-[1300px] mx-auto px-4 mt-14 border-4 border-[#AFFE14] rounded-3xl">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-32 items-center mb-6 sm:mb-10">
           <div
@@ -95,5 +98,4 @@ const AboutUs = () => {
     </section>
   );
 };
-
 export default AboutUs;

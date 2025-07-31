@@ -33,15 +33,6 @@ const Banner = () => {
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDirection((prev) => (prev === "left" ? "right" : "left"));
-      setSpeed((prev) => Math.random() * 30 + 30); // Random speed between 30-60
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="pt-2 sm:pt-4 bg-[#000000]">
       <Marquee

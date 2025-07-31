@@ -3,6 +3,17 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import {
+  FaInstagram,
+  FaSearch,
+  FaFileAlt,
+  FaEnvelope,
+  FaAd,
+  FaChartBar,
+  FaRobot,
+  FaChartLine,
+  FaTrademark,
+} from "react-icons/fa";
 
 const Technologies = () => {
   const headerRef = useRef(null);
@@ -57,71 +68,74 @@ const Technologies = () => {
 
   const features = [
     {
-      title: "Next.js",
+      title: "Social Media Marketing",
       description:
-        "A powerful React framework that enables server-side rendering and static site generation for optimal performance and SEO.",
-      image: "/images/tech-1.png",
+        "Strategic social media management across platforms to build brand presence, engage audiences and drive conversions.",
+      icon: FaInstagram,
     },
     {
-      title: "React.js",
+      title: "Search Engine Optimization",
       description:
-        "A JavaScript library for building dynamic user interfaces with reusable components and efficient state management.",
-      image: "/images/tech-2.png",
+        "Data-driven SEO strategies to improve search rankings, increase organic traffic and enhance online visibility.",
+      icon: FaSearch,
     },
     {
-      title: "Tailwind CSS",
+      title: "Content Marketing",
       description:
-        "A utility-first CSS framework that allows rapid UI development with pre-built classes and responsive design.",
-      image: "/images/tech-3.png",
+        "Compelling content creation and distribution to attract, engage and retain target audiences across channels.",
+      icon: FaFileAlt,
     },
     {
-      title: "Cloudflare",
+      title: "Email Marketing",
       description:
-        "A global CDN and security platform providing DDoS protection, SSL encryption, and edge computing capabilities.",
-      image: "/images/tech-4.png",
+        "Personalized email campaigns to nurture leads, drive engagement and maximize customer lifetime value.",
+      icon: FaEnvelope,
     },
     {
-      title: "Node.js",
+      title: "Pay-Per-Click Advertising",
       description:
-        "A JavaScript runtime environment that enables server-side development with high performance and scalability.",
-      image: "/images/tech-8.png",
+        "Results-focused PPC campaign management across search and social platforms to drive qualified traffic and leads.",
+      icon: FaAd,
     },
     {
-      title: "Flutter",
+      title: "Analytics & Reporting",
       description:
-        "Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.",
-      image: "/images/tech-5.png",
+        "Comprehensive tracking and analysis of marketing metrics to optimize performance and demonstrate ROI.",
+      icon: FaChartBar,
     },
     {
-      title: "MongoDB",
+      title: "Marketing Automation",
       description:
-        "A NoSQL database that provides high scalability, flexibility and performance for modern applications.",
-      image: "/images/tech-9.png",
+        "Automated marketing workflows to streamline processes, nurture leads and deliver personalized experiences.",
+      icon: FaRobot,
     },
     {
-      title: "Amazon Web Services",
+      title: "Conversion Rate Optimization",
       description:
-        "A comprehensive cloud platform offering compute, storage, database, ML, analytics and other services.",
-      image: "/images/tech-6.png",
+        "Data-driven CRO strategies to improve website performance and maximize conversion rates across funnels.",
+      icon: FaChartLine,
     },
     {
-      title: "Microsoft Azure",
+      title: "Brand Strategy",
       description:
-        "Enterprise-grade cloud computing platform with integrated services for modern cloud applications.",
-      image: "/images/tech-7.png",
+        "Strategic brand development and positioning to build strong, memorable brands that resonate with target audiences.",
+      icon: FaTrademark,
     },
   ];
 
   return (
-    <section className="bg-neutral-900 py-16 md:py-24 lg:py-32 lg:px-24">
+    <section
+      id="technologies"
+      className="bg-neutral-900 py-16 md:py-24 lg:py-32 lg:px-24"
+    >
       <div className="max-w-7xl mx-auto ">
         <div ref={headerRef} className="text-left mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-white mb-4 uppercase">
-            Our Technology Stack
+            Our Digital Marketing Services
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base">
-            We leverage cutting-edge technologies to build robust and scalable
-            solutions for our clients
+            We leverage proven digital marketing strategies to help businesses
+            grow their online presence and achieve measurable results
           </p>
         </div>
 
@@ -130,17 +144,11 @@ const Technologies = () => {
             <div
               ref={(el) => (cardsRef.current[index] = el)}
               key={feature.title}
-              className="bg-neutral-800 rounded-xl p-6 border border-neutral-600   hover:border-neutral-200 transition-colors ">
+              className="bg-neutral-800 rounded-xl p-6 border border-neutral-600 hover:border-neutral-200 transition-colors"
+            >
               <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-12 h-12">
-                  <Image
-                    src={feature.image}
-                    alt={`${feature.title} icon`}
-                    priority
-                    width={50}
-                    height={50}
-                    className="object-contain"
-                  />
+                <div className="w-12 h-12 flex items-center justify-center text-blue-400">
+                  <feature.icon size={32} />
                 </div>
                 <h3 className="text-xl font-semibold text-white">
                   {feature.title}

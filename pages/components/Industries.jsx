@@ -57,7 +57,10 @@ const Industries = () => {
 
   return (
     <>
-      <section className="w-full lg:px-24 pt-12 sm:pt-16 md:pt-20 bg-black">
+      <section
+        id="industries"
+        className="w-full lg:px-24 pt-12 sm:pt-16 md:pt-20 bg-black"
+      >
         {/* Header section */}
         <div
           ref={headerRef}

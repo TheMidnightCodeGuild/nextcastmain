@@ -16,7 +16,8 @@ const Testimonial = () => {
               pointerEvents: "none",
               width: "100px",
               height: "100px",
-            }}>
+            }}
+          >
             <path
               d="M148.07544887065887 3818.791645169258 C175.1888587363942 3817.567651204419, 202.84316215681702 3819.2495321553465, 230.7847422361374 3821.4583817720413"
               fill="none"
@@ -27,7 +28,8 @@ const Testimonial = () => {
                 strokeDasharray: "82.8068",
                 animation:
                   "497.807ms ease-out 0ms 1 normal forwards running rough-notation-dash",
-              }}></path>
+              }}
+            ></path>
             <path
               d="M227.11670696735382 3821.727922320366 C211.85840877368656 3818.6037419283116, 193.42835765033178 3819.836716934415, 142.96069729328156 3818.6182535886765"
               fill="none"
@@ -38,7 +40,8 @@ const Testimonial = () => {
                 strokeDasharray: "84.2924",
                 animation:
                   "506.738ms ease-out 497.807ms 1 normal forwards running rough-notation-dash",
-              }}></path>
+              }}
+            ></path>
             <path
               d="M146.48070323467255 3818.825050473213 C175.60860511457767 3817.847257161498, 205.75786929917032 3822.221887135863, 227.56292140483856 3820.945034146309"
               fill="none"
@@ -49,7 +52,8 @@ const Testimonial = () => {
                 strokeDasharray: "81.147",
                 animation:
                   "487.829ms ease-out 1004.54ms 1 normal forwards running rough-notation-dash",
-              }}></path>
+              }}
+            ></path>
             <path
               d="M227.8990136384964 3820.4532450437546 C211.36074081843154 3817.6767902326665, 193.23274631867918 3817.5002193403325, 143.67671978473663 3821.7399386167526"
               fill="none"
@@ -60,7 +64,8 @@ const Testimonial = () => {
                 strokeDasharray: "84.4402",
                 animation:
                   "507.626ms ease-out 1492.37ms 1 normal forwards running rough-notation-dash",
-              }}></path>
+              }}
+            ></path>
           </svg>
         </h2>
         <p className="mt-2 text-base sm:text-lg text-neutral-600 dark:text-neutral-200 text-left">
@@ -77,7 +82,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -107,7 +113,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -135,7 +142,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -165,7 +173,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -194,7 +203,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -224,7 +234,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -257,7 +268,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -288,7 +300,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -317,7 +330,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -349,7 +363,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -377,7 +392,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">
@@ -404,7 +420,8 @@ const Testimonial = () => {
                 className="absolute top-2 left-2 text-neutral-300"
                 height="1em"
                 width="1em"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
               </svg>
               <h3 className="text-sm font-normal text-neutral-400 py-2 relative">

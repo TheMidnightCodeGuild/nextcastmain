@@ -33,8 +33,9 @@ const BackToTopButton = () => {
           : "opacity-0 pointer-events-none transform translate-y-16"
       }`}
       onClick={scrollToTop}
-      aria-label="Back to top">
-      <IoChevronUpOutline className="text-2xl" />
+      aria-label="Back to top"
+    >
+      <IoChevronUpOutline className="text-4xl" />
     </button>
   );
 };
